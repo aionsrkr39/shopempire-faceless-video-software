@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShopEmpire Bundle: Faceless Product Videos, All in One Package</title>
+<meta name="description" content="An independent overview of the ShopEmpire Bundle: an AI tool for turning product photos into videos without appearing on camera.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b1020; --bg2:#121935; --card:#161e3f; --line:#27325e;
+  --text:#eef1ff; --muted:#b6bfe0; --accent:#22d3b6; --accent2:#7c5cff;
+  --warm:#ffc857; --dark:#06231f;
+  --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.15;letter-spacing:-.01em}
+img{max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+.alt{background:var(--bg2)}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+h2{font-size:clamp(1.7rem,5vw,2.6rem);margin-bottom:14px}
+.lead{color:var(--muted);font-size:1.05rem;max-width:720px}
+.center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
+
+/* buttons */
+.btn{display:inline-block;background:linear-gradient(135deg,var(--accent),#3be8a6);color:var(--dark);font-weight:700;text-decoration:none;padding:16px 30px;border-radius:999px;font-size:1.05rem;box-shadow:0 10px 30px rgba(34,211,182,.28);transition:transform .2s ease,box-shadow .2s ease}
+.btn:hover,.btn:focus-visible{transform:translateY(-2px);box-shadow:0 14px 36px rgba(34,211,182,.4);outline:none}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.btn.ghost{background:transparent;color:var(--text);border:2px solid var(--line);box-shadow:none}
+.btn.ghost:hover{border-color:var(--accent)}
+
+/* header */
+.top{padding:16px 0;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:1.05rem}
+.brand span{color:var(--accent)}
+.top .wrap{flex-wrap:nowrap}
+.brand{min-width:0}
+.top .btn{padding:10px 18px;font-size:.9rem;white-space:nowrap;flex-shrink:0}
+@media (max-width:420px){.top .btn{padding:9px 14px;font-size:.85rem}.brand{font-size:.95rem}}
+
+/* hero */
+.hero{padding:56px 0 64px;background:radial-gradient(900px 400px at 80% -10%,rgba(124,92,255,.35),transparent 60%),radial-gradient(700px 400px at 0% 10%,rgba(34,211,182,.18),transparent 60%)}
+.hero .grid{display:grid;gap:36px;align-items:center}
+.hero h1{font-size:clamp(2rem,7vw,3.4rem);margin-bottom:16px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.sub{color:var(--muted);font-size:1.1rem;margin-bottom:26px}
+.note{font-size:.85rem;color:var(--muted);margin-top:14px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.chip{font-size:.82rem;border:1px solid var(--line);background:rgba(255,255,255,.04);padding:6px 12px;border-radius:999px;color:var(--muted)}
+
+/* media placeholders */
+.ph{width:100%;border-radius:var(--radius);border:1px dashed #4a58a0;background:linear-gradient(135deg,#1a2350,#101635);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-size:.9rem;padding:18px;position:relative;overflow:hidden}
+.ph::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(124,92,255,.25),transparent 55%)}
+.ph span{position:relative;max-width:260px}
+.r169{aspect-ratio:16/9}
+.r11{aspect-ratio:1/1}
+.ph.has-img{padding:0;border:none;background:none}
+.ph.has-img::before{display:none}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* cards */
+.cards{display:grid;gap:18px;margin-top:36px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.card h3{font-size:1.2rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.97rem}
+.ico{width:46px;height:46px;border-radius:12px;background:rgba(34,211,182,.14);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:14px}
+
+.two{display:grid;gap:36px;align-items:center}
+.pain li{list-style:none;padding:14px 16px 14px 46px;margin-bottom:12px;background:var(--card);border:1px solid var(--line);border-radius:14px;position:relative;color:var(--muted)}
+.pain li::before{content:"✅";position:absolute;left:14px;top:13px;font-size:.95rem}
+
+/* steps */
+.steps{display:grid;gap:18px;margin-top:36px;counter-reset:s}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 24px 24px 74px;position:relative}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:22px;top:22px;width:36px;height:36px;border-radius:50%;background:var(--accent2);display:flex;align-items:center;justify-content:center;font-weight:700}
+.step h3{font-size:1.1rem;margin-bottom:6px}
+.step p{color:var(--muted);font-size:.95rem}
+
+/* included */
+.inc{display:grid;gap:18px;margin-top:36px}
+.inc .card h3{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.val{font-size:.8rem;color:var(--warm);font-family:Inter,sans-serif;font-weight:600;background:rgba(255,200,87,.1);padding:3px 10px;border-radius:999px;align-self:center}
+.card ul{margin:12px 0 0 18px;color:var(--muted);font-size:.93rem}
+.card ul li{margin-bottom:6px}
+.soon{display:inline-block;font-size:.72rem;font-weight:600;color:#1b1400;background:var(--warm);padding:1px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+.callout{margin-top:26px;border-left:4px solid var(--warm);background:rgba(255,200,87,.07);padding:16px 20px;border-radius:0 14px 14px 0;color:var(--muted);font-size:.95rem}
+
+/* pricing */
+.price-box{max-width:560px;margin:34px auto 0;background:linear-gradient(160deg,#1b2557,#131a3d);border:2px solid var(--accent);border-radius:24px;padding:34px 26px;text-align:center}
+.price-box .was{color:var(--muted);font-size:.95rem}
+.price-box .amt{font-family:"Space Grotesk",sans-serif;font-size:3.4rem;font-weight:700;color:var(--accent);margin:6px 0}
+.price-box ul{list-style:none;text-align:left;margin:20px auto 26px;max-width:380px;color:var(--muted);font-size:.95rem}
+.price-box li{padding-left:26px;position:relative;margin-bottom:8px}
+.price-box li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+
+/* guarantee */
+.guar{max-width:760px;margin:0 auto;text-align:center;border:1px solid var(--line);background:var(--card);border-radius:24px;padding:36px 26px}
+.badge{width:84px;height:84px;margin:0 auto 16px;border-radius:50%;background:linear-gradient(135deg,var(--warm),#ff9f45);color:#2a1a00;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:700;line-height:1.05}
+.badge b{font-size:1.7rem;font-family:"Space Grotesk",sans-serif}
+.badge small{font-size:.65rem;letter-spacing:.06em}
+
+/* faq */
+.faq{max-width:820px;margin:34px auto 0}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;padding:0 20px}
+summary{cursor:pointer;padding:18px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:14px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--accent);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);padding:0 0 18px;font-size:.96rem}
+
+/* footer */
+footer{background:#070b18;padding:44px 0;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+footer .disc{background:rgba(255,255,255,.04);border:1px solid var(--line);padding:16px 18px;border-radius:12px;margin-bottom:18px;color:var(--text)}
+footer p{margin-bottom:12px}
+footer .links a{margin-right:16px;color:var(--muted)}
+
+/* fade in */
+.fade{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.fade.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.fade{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+noscript style{display:none}
+
+/* tablet */
+@media (min-width:700px){
+  section{padding:84px 0}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .inc{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+}
+/* desktop */
+@media (min-width:1000px){
+  .hero .grid{grid-template-columns:1fr 1.05fr}
+  .two{grid-template-columns:1fr 1fr}
+  .two.flip .media{order:-1}
+  .cards.c3{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(4,1fr)}
+  .step{padding:70px 22px 24px}
+  .step::before{top:22px;left:22px}
+}
+</style>
+<noscript><style>.fade{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">Shop<span>Empire</span> Bundle <small style="color:var(--muted);font-weight:500">· Independent Overview</small></div>
+    <a class="btn" href="https://jvz9.com/c/3640421/453189/" target="_blank" rel="noopener sponsored">View Bundle</a>
+  </div>
+</header>
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow">AI Video Tool · Faceless Product Videos</span>
+      <h1>Turn Product Photos into <em>Ready-to-Post Videos</em>, without Ever Stepping on Camera</h1>
+      <p class="sub">ShopEmpire is an AI tool that, according to its seller, finds trending products, builds a video around them, adds your affiliate link to the caption and schedules it to five platforms. The Bundle packs the main app, four upgrades and eight bonuses into one purchase.</p>
+      <a class="btn" href="https://jvz9.com/c/3640421/453189/" target="_blank" rel="noopener sponsored">See The Complete Bundle</a>
+      <p class="note">Opens the official ShopEmpire page. Features and claims below are the seller's own.</p>
+      <div class="chips">
+        <span class="chip">No camera</span>
+        <span class="chip">No voice recording</span>
+        <span class="chip">One-time payment, per seller</span>
+        <span class="chip">14-day guarantee</span>
+      </div>
+    </div>
+    <div class="fade">
+      <!-- Placeholder 1 of 4 · Hero · 16:9 -->
+      <div class="ph r169 has-img"><img src="https://imglink.cc/cdn/a9wf1lHrqf.png" alt="ShopEmpire app showing a product video being created" loading="eager"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. PROBLEM -->
+<section class="alt">
+  <div class="wrap two">
+    <div class="fade">
+      <span class="eyebrow">The Problem</span>
+      <h2>Short-form Video Sells, but Making It is a Grind</h2>
+      <p class="lead" style="margin-bottom:22px">Many people who want to promote products online get stuck before the first post goes live.</p>
+      <ul class="pain">
+        <li>You don't want to appear on camera or record your own voice.</li>
+        <li>Editing software takes time to learn, and each video takes hours.</li>
+        <li>Finding products worth promoting means jumping between marketplaces.</li>
+        <li>Posting the same video to several platforms is repetitive and easy to let slide.</li>
+      </ul>
+    </div>
+    <div class="fade">
+      <h3 style="font-size:1.4rem;margin-bottom:12px">The result?</h3>
+      <p class="lead">Ideas pile up, posting is inconsistent, and the content never gets made. The seller built ShopEmpire to remove the camera, the editing skills and the manual publishing from that process.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. SOLUTION -->
+<section>
+  <div class="wrap two flip">
+    <div class="fade">
+      <span class="eyebrow">The Solution</span>
+      <h2>One App for Finding, Creating and Publishing</h2>
+      <p class="lead" style="margin-bottom:18px">Per the seller, ShopEmpire discovers trending items on Amazon, TikTok Shop and eBay, creates a cinematic video from the real product's photo, and posts it with your affiliate link in the caption.</p>
+      <p class="lead">The Bundle adds four upgrades for more credits, ready-made niche packs, extra AI creation tools and an agency-style client dashboard, plus eight bonuses.</p>
+      <p style="margin-top:26px"><a class="btn" href="https://jvz9.com/c/3640421/453189/" target="_blank" rel="noopener sponsored">Explore ShopEmpire</a></p>
+    </div>
+    <div class="media fade">
+      <!-- Placeholder 2 of 4 · Middle · 16:9 -->
+      <div class="ph r169 has-img"><img src="https://imglink.cc/cdn/XxAMgr3aVx.png" alt="ShopEmpire Bundle overview showing the main app and its four upgrades" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. BENEFITS -->
+<section class="alt">
+  <div class="wrap">
+    <div class="center fade">
+      <span class="eyebrow">Key Benefits</span>
+      <h2>What the Seller Says You Get</h2>
+      <p class="lead">All items below are described by the seller on the official page.</p>
+    </div>
+    <div class="cards c3">
+      <div class="card fade"><div class="ico">🎥</div><h3>Faceless by design</h3><p>The product appears on screen, the voiceover is generated automatically and any brand character is an AI mascot, so you stay off camera.</p></div>
+      <div class="card fade"><div class="ico">🔎</div><h3>Trending product discovery</h3><p>Browse trending items across TikTok Shop, Amazon and eBay by niche and region, with prices and current discounts shown.</p></div>
+      <div class="card fade"><div class="ico">🧩</div><h3>Templates and AI scene building</h3><p>A library of multi-scene ad templates in several aspect ratios, plus an AI assistant that shows its plan before using credits.</p></div>
+      <div class="card fade"><div class="ico">📅</div><h3>Publish and schedule</h3><p>Send videos to TikTok, YouTube, Facebook, Instagram and Pinterest, with your affiliate link carried into the caption.</p></div>
+      <div class="card fade"><div class="ico">🏷️</div><h3>Bulk creation and white-label</h3><p>The Credit Booster Pro upgrade adds bulk creation, advanced storytelling scenes and removal of the ShopEmpire watermark.</p></div>
+      <div class="card fade"><div class="ico">💼</div><h3>Client-ready tools</h3><p>A commercial licence and the Agency Dashboard offer client workspaces, branded videos and reporting for selling videos as a service.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. WHAT'S INCLUDED -->
+<section>
+  <div class="wrap">
+    <div class="center fade">
+      <span class="eyebrow">What's Included</span>
+      <h2>Everything in the Bundle</h2>
+      <p class="lead">The seller lists these components. Values shown are the seller's stated individual values.</p>
+    </div>
+
+    <div class="inc">
+      <div class="card fade">
+        <h3>ShopEmpire (core app) <span class="val">Stated value $2,567</span></h3>
+        <ul>
+          <li>Trending product discovery, 10 niches, 16 regions</li>
+          <li>Campaign builder, up to 20 products per campaign</li>
+          <li>Ad template library, 7 categories, 7 aspect ratios</li>
+          <li>AI studio assistant, up to 10 scenes / 30 seconds</li>
+          <li>Product and service video modes</li>
+          <li>Five-platform publisher and scheduler</li>
+          <li>Affiliate caption delivery, media library, training videos</li>
+          <li>Commercial licence and 10,000 starting credits</li>
+        </ul>
+      </div>
+      <div class="card fade">
+        <h3>Credit Booster Pro <span class="val">Stated value $997</span></h3>
+        <ul>
+          <li>20,000 extra credits (30,000 total with the core app)</li>
+          <li>Bulk creation, up to 10 images at once</li>
+          <li>Advanced multi-scene storytelling</li>
+          <li>Automatic voice-over</li>
+          <li>White-label videos (watermark removed)</li>
+          <li>Member pricing on credit top-ups</li>
+        </ul>
+      </div>
+      <div class="card fade">
+        <h3>DFY Niche Packs <span class="val">Stated value $697</span></h3>
+        <ul>
+          <li>50+ pre-built campaign templates across 10 niches</li>
+          <li>Pre-written product tag copy and overlay scripts</li>
+          <li>Hook formulas for video openings</li>
+          <li>Copy-and-paste publishing schedules for all five platforms</li>
+        </ul>
+      </div>
+      <div class="card fade">
+        <h3>Visionary Studio <span class="val">Stated value $1,497</span></h3>
+        <ul>
+          <li>AI consistent brand character <span class="soon">Coming soon</span></li>
+          <li>AI image-to-video engine <span class="soon">Coming soon</span></li>
+          <li>AI text-to-video creator <span class="soon">Coming soon</span></li>
+          <li>AI image upscaler and background remover <span class="soon">Coming soon</span></li>
+          <li>AI in-video inpainting <span class="soon">Coming soon</span></li>
+        </ul>
+        <p style="color:var(--muted);font-size:.85rem;margin-top:10px">The seller's page marks these as features that will be added later.</p>
+      </div>
+      <div class="card fade">
+        <h3>Agency Dashboard <span class="val">Stated value $997</span></h3>
+        <ul>
+          <li>10 separate client workspaces</li>
+          <li>White-label videos with your client's branding</li>
+          <li>Client reporting dashboard (views, clicks, engagement)</li>
+          <li>Editable client proposal</li>
+          <li>Three-part agency quickstart training</li>
+          <li>Suggested client pricing guide</li>
+        </ul>
+      </div>
+      <div class="card fade">
+        <h3>8 Fast-Action Bonuses <span class="val">Stated value $1,026</span></h3>
+        <ul>
+          <li>Content Creator Kickstart</li>
+          <li>The Product Video Business Playbook</li>
+          <li>Agency Growth Toolkit</li>
+          <li>Content Creator Toolkit</li>
+          <li>AI Video Script Machine</li>
+          <li>30-Day AI Content Calendar Generator</li>
+          <li>ElevenLabs Voice Clone Launch Kit</li>
+          <li>The Shoppable Video Script Kit</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="two flip" style="margin-top:44px">
+      <div class="fade">
+        <h3 style="font-size:1.5rem;margin-bottom:10px">How it works, in short</h3>
+        <p class="lead">The workflow described on the official page follows four simple steps.</p>
+      </div>
+      <div class="media fade">
+        <!-- Placeholder 3 of 4 · Middle · 16:9 -->
+        <div class="ph r169 has-img"><img src="https://imglink.cc/cdn/y686CFvXR4.png" alt="How ShopEmpire creates a faceless product video" loading="lazy"></div>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step fade"><h3>Pick a product</h3><p>Browse trending items by niche and region, or add your own product photo.</p></div>
+      <div class="step fade"><h3>Build the video</h3><p>Use a template or the AI assistant to create a video from the product's image.</p></div>
+      <div class="step fade"><h3>Add your link</h3><p>Attach your affiliate link so it appears in the post's caption.</p></div>
+      <div class="step fade"><h3>Schedule and publish</h3><p>Queue posts to the five supported platforms from one place.</p></div>
+    </div>
+
+    <div class="callout fade"><strong style="color:var(--text)">Good to know:</strong> the seller states the White Label Reseller licence is <em>not</em> included. The Agency Dashboard is for selling videos you create to clients, not for reselling the ShopEmpire software itself.</div>
+  </div>
+</section>
+
+<!-- 6. SOCIAL PROOF: omitted (no testimonials/ratings visible on the source page) -->
+
+<!-- 7. PRICING -->
+<section class="alt" id="pricing">
+  <div class="wrap">
+    <div class="center fade">
+      <span class="eyebrow">The Offer</span>
+      <h2>The Complete Bundle in One Purchase</h2>
+      <p class="lead">The seller says buying the pieces separately means going through each upgrade offer one at a time. The Bundle puts them all in one transaction.</p>
+    </div>
+    <div class="price-box fade">
+      <div class="was">Seller's stated total value: $7,781</div>
+      <div class="amt">$267</div>
+      <div class="was">One-time payment, per seller. Credits are used for video generation.</div>
+      <ul>
+        <li>ShopEmpire core app</li>
+        <li>Credit Booster Pro, DFY Niche Packs</li>
+        <li>Visionary Studio (some features coming later)</li>
+        <li>Agency Dashboard</li>
+        <li>All 8 bonuses</li>
+        <li>14-day money-back guarantee</li>
+      </ul>
+      <a class="btn" href="https://jvz9.com/c/3640421/453189/" target="_blank" rel="noopener sponsored">Check Current Pricing</a>
+      <p class="note">Price shown reflects the seller's page when this was written and may have changed. Always confirm on the official page.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 8. GUARANTEE -->
+<section>
+  <div class="wrap">
+    <div class="guar fade">
+      <div class="badge"><b>14</b><small>DAY</small></div>
+      <h2 style="font-size:clamp(1.5rem,4vw,2.1rem)">14-Day Money-Back Guarantee</h2>
+      <p class="lead">The seller offers a 14-day guarantee on the complete Bundle. Per their page, if the app doesn't do what the page says, you can contact support for a refund. Review the official refund policy for full terms.</p>
+      <div style="margin-top:22px">
+        <!-- Placeholder 4 of 4 · Middle · 1:1 -->
+        <div class="ph r11 has-img" style="max-width:320px;margin:0 auto"><img src="https://imglink.cc/cdn/aDStAEGjaM.png" alt="ShopEmpire Bundle package with the 14-day money-back guarantee" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. FAQ -->
+<section class="alt">
+  <div class="wrap">
+    <div class="center fade">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common Questions</h2>
+    </div>
+    <div class="faq fade">
+      <details><summary>Do I need to show my face or use my voice?</summary><p>According to the seller, no. The product appears on screen, the voice-over is generated automatically and any brand character is an AI mascot.</p></details>
+      <details><summary>Do I need to buy the products I promote?</summary><p>The seller says no. You promote products as an affiliate, and the video is built from the seller's own product photo.</p></details>
+      <details><summary>How would I get paid?</summary><p>Through the affiliate program of whichever marketplace you promote, at its published rates. The seller notes that you need approval for the program you use. Details are on the official product page.</p></details>
+      <details><summary>Is there a monthly fee?</summary><p>The seller states the Bundle is a one-time payment with no recurring charges, though video generation uses credits. Confirm current terms on the official page.</p></details>
+      <details><summary>How many credits are included?</summary><p>The seller states 30,000 in total: 10,000 with the core app plus 20,000 from Credit Booster Pro. Top-ups are available at member pricing.</p></details>
+      <details><summary>Can I use it for client work?</summary><p>Yes, per the seller. A commercial licence is included, and the Agency Dashboard offers 10 client workspaces, white-label videos and client reporting.</p></details>
+      <details><summary>Is the White Label Reseller licence included?</summary><p>No. The seller states it is a separate offer, as is the 120K credit pack. The Bundle covers the core app and the four upgrades.</p></details>
+      <details><summary>Can I really earn income with this?</summary><p>No result is guaranteed. The seller says earnings depend on the products you choose, how consistently you post and your market, and their page carries an income disclaimer. Read it before purchasing.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 10. FINAL CTA -->
+<section>
+  <div class="wrap center fade">
+    <h2>Ready to See It for Yourself?</h2>
+    <p class="lead" style="margin-bottom:26px">Visit the official page to watch the demo video, review every feature in detail and check current pricing.</p>
+    <a class="btn" href="https://jvz9.com/c/3640421/453189/" target="_blank" rel="noopener sponsored">Visit The Official ShopEmpire Page</a>
+  </div>
+</section>
+
+<!-- 11. FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="disc">
+      This page contains affiliate links. If you make a purchase through links on this page, we may earn a commission at no additional cost to you. All product details, pricing, and offers are subject to change — please verify current information on the official ShopEmpire Bundle page before purchasing.
+    </div>
+    <p>Earnings disclaimer: nothing on this page is a promise of income or results. Outcomes vary and depend on your effort, market and the products you promote. This is an independent promotional page and is not operated by the product's seller.</p>
+    <p class="links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Contact</a></p>
+    <p>&copy; <span id="yr">2026</span> All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var els = document.querySelectorAll('.fade');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}
+    });
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
